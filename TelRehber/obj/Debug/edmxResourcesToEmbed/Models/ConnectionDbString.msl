@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ConnectionTelRehberDBModelStoreContainer" CdmEntityContainer="ConnectionTelRehberDBEntities">
+    <EntitySetMapping Name="kisiler">
+      <EntityTypeMapping TypeName="ConnectionTelRehberDBModel.kisiler">
+        <MappingFragment StoreEntitySet="kisiler">
+          <ScalarProperty Name="Telefonu" ColumnName="Telefonu" />
+          <ScalarProperty Name="Soyadı" ColumnName="Soyadı" />
+          <ScalarProperty Name="Adı" ColumnName="Adı" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="kullanicilar">
+      <EntityTypeMapping TypeName="ConnectionTelRehberDBModel.kullanicilar">
+        <MappingFragment StoreEntitySet="kullanicilar">
+          <ScalarProperty Name="author" ColumnName="author" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="username" ColumnName="username" />
+          <ScalarProperty Name="userID" ColumnName="userID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

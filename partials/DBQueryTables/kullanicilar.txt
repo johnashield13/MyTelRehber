@@ -1,0 +1,22 @@
+USE [TelRehber]
+GO
+
+/****** Object:  Table [dbo].[kullanicilar]    Script Date: 18.03.2023 19:18:25 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[kullanicilar](
+	[userID] [int] IDENTITY(1,1) NOT NULL,
+	[UserName] [nvarchar](11) NOT NULL,
+	[password] [nvarchar](11) NOT NULL,
+ CONSTRAINT [PK_kullanicilar] PRIMARY KEY CLUSTERED 
+(
+	[userID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+GO
+
+

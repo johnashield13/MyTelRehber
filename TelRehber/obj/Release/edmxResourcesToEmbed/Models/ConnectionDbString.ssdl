@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ConnectionTelRehberDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="kisiler">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Adı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Soyadı" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Telefonu" Type="nchar" MaxLength="11" Nullable="false" />
+  </EntityType>
+  <EntityType Name="kullanicilar">
+    <Key>
+      <PropertyRef Name="userID" />
+    </Key>
+    <Property Name="userID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="username" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="password" Type="nvarchar" MaxLength="11" Nullable="false" />
+    <Property Name="author" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="ConnectionTelRehberDBModelStoreContainer">
+    <EntitySet Name="kisiler" EntityType="Self.kisiler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="kullanicilar" EntityType="Self.kullanicilar" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>
